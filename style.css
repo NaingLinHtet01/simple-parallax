@@ -4,6 +4,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-size: 1em;
 }
 body{
     background-color: #222;
@@ -107,3 +108,18 @@ body{
     transform: translate(-50%,-50%);
     color: #fff;
 }
+
+/* For Responsive */
+@media (max-width: 640px) { 
+    *{
+        font-size: 0.65em;
+    }
+ }
+
+/* @media (max-width: 768px) { ... }
+
+@media (max-width: 1024px) { ... }
+
+@media (max-width: 1280px) { ... }
+
+@media (max-width: 1536px) { ... } */
