@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #222;
+    
+}
+
+/* Typography */
+body{
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;    
+    font-family: 'Poppins', sans-serif;
+}
+.section .content h1{
+    font-size: 1.3rem;
+}
+.section .content p{
+    font-size: 1rem;
+}
+
+/* Section and Content Styling and positioning */
+.section{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    letter-spacing: 0.2rem;
+    overflow: hidden;
+	clip: rect(0, auto, auto, 0);
+    box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 1);
+}
+.section .content{
+    position: fixed;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+}
+
+/* Parallax Effect */
+/* __________________________________________________________________________________________________ */
+/* 1 */
+.section:nth-child(1){
+    z-index: 1;
+    top: 0vh;
+}
+.section:nth-child(1) .content{
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+
+/* 2 */
+.section:nth-child(2){
+    z-index: 2;
+    top: 100vh;
+    background-image: url("./images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section:nth-child(2) .content{
+    transform: translate(-50%,-50%);
+}
+
+/* 3 */
+.section:nth-child(3){
+    z-index: 3;
+    top: 200vh;
+    background-color: #FFF4E0;
+}
+.section:nth-child(3) .content{
+    transform: translate(-50%,-50%);
+}
+
+/* 4 */
+.section:nth-child(4){
+    z-index: 4;
+    top: 300vh;
+    background-color: #FFBF9B;
+}
+.section:nth-child(4) .content{
+    transform: translate(-50%,-50%);
+}
+
+/* 5 */
+.section:nth-child(5){
+    z-index: 5;
+    top: 400vh;
+    background-color: #B46060;
+}
+.section:nth-child(5) .content{
+    transform: translate(-50%,-50%);
+}
+
+/* 6 */
+.section:nth-child(6){
+    z-index: 6;
+    top: 500vh;
+    background-color: #4D4D4D;
+}
+.section:nth-child(6) .content{
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
